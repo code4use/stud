@@ -1,0 +1,8 @@
+<h1>Задания</h1>
+<ul>
+{% for task in task_list %}
+    <li>{{task}}</li>
+{% empty %}
+    <li>No tasks yet.</li>
+{% endfor %}
+</ul>
